@@ -1,0 +1,83 @@
+.layout {
+  background-image: url("./TextSection.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  .services {
+    padding: 20vw 56vw 20vw 10vw;
+    color: white;
+
+    h2 {
+      font-size: 50px;
+      font-weight: 300;
+    }
+    p {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+    }
+  }
+}
+.info {
+  padding: 7vw 5vw;
+  .infoCharge {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      width: 35%;
+    }
+    .infoText {
+      padding: 0px 10vw 0px 14vw;
+      h2 {
+        font-size: 50px;
+        font-weight: 500;
+        padding-bottom: 10px;
+      }
+      p {
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 150%;
+        color: rgba(0, 0, 0, 0.9);
+      }
+    }
+  }
+  .infoAboutWork {
+    margin-top: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      width: 35%;
+    }
+    .infoList {
+      margin: 0 auto;
+      width: 28vw;
+
+      h2 {
+        font-size: 46px;
+        padding-bottom: 2vw;
+        font-weight: 300;
+      }
+      div {
+        padding: 1vw;
+        h3 {
+          font-size: 24px;
+          margin-bottom: 1vw;
+        }
+        p {
+          font-size: 14px;
+          color: rgba(0, 0, 0, 0.5);
+        }
+        align-items: center;
+        position: relative;
+        &::before {
+          position: absolute;
+          left: -50px;
+          content: url("./before.png");
+        }
+      }
+    }
+  }
+}

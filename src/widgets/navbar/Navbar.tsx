@@ -3,6 +3,7 @@ import styles from "./Navbar.module.scss";
 import { LogoSVG } from "../../shared/svg/LogoSVG";
 import { ProfileSVG } from "../../shared/svg/ProfileSVG";
 import { CartSVG } from "../../shared/svg/CartSVG";
+import { BurgerSVG } from "../../shared/svg/BurgerSVG";
 const data = ["electric", "city", "kids", "accessories", "stores", "leasing"];
 export const Navbar = () => {
   return (
@@ -21,6 +22,9 @@ export const Navbar = () => {
         </div>
       </div>
       <div className={styles.interface}>
+        <button className={styles.button}>
+          <BurgerSVG />
+        </button>
         <button className={styles.button}>
           <ProfileSVG />
         </button>

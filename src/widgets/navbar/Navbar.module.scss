@@ -1,6 +1,6 @@
 .navbar {
   display: flex;
-  padding: 20px 50px;
+  padding: 30px 50px;
   justify-content: space-between;
   .logoWithLinks {
     display: flex;
@@ -32,10 +32,30 @@
     display: flex;
     gap: 20px;
     align-items: center;
+
     .button {
       background-color: transparent;
       border: none;
       cursor: pointer;
+      &:first-child {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 1250px) {
+  .navbar {
+    .logoWithLinks {
+      .links {
+        display: none;
+      }
+    }
+    .interface {
+      .button {
+        &:first-child {
+          display: block;
+        }
+      }
     }
   }
 }

@@ -1,0 +1,16 @@
+.footer {
+  background-color: black;
+  padding: 18px 50px;
+  display: flex;
+  flex-direction: column;
+  .button {
+    align-self: flex-end;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    transition: 0.5s;
+    &:hover {
+      transform: translateY(-12px);
+    }
+  }
+}
