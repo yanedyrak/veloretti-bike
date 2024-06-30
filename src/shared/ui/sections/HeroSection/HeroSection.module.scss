@@ -1,0 +1,26 @@
+.layout {
+  background-image: url("./Hero\ Section.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+
+  width: 100vw;
+
+  .container {
+    padding: 365px 0px 0px 50px;
+    color: white;
+    font-weight: 500;
+    p {
+      font-size: 14px;
+      line-height: 107%;
+      letter-spacing: 0.04em;
+    }
+    h1 {
+      text-transform: capitalize;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 70px;
+    }
+  }
+}
