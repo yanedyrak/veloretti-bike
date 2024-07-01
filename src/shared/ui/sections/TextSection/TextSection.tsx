@@ -28,9 +28,10 @@ export const TextSection = () => {
   useGSAP(() => {
     gsap.to(services.current, {
       y: -450,
+
       scrollTrigger: {
         trigger: services.current,
-        start: "top 110%",
+        start: "top 130%",
         end: "top 15%",
         scrub: true,
       },

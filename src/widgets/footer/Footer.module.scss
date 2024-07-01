@@ -1,8 +1,10 @@
 .footer {
-  background-color: black;
-  padding: 18px 50px;
   display: flex;
   flex-direction: column;
+  background-color: #141615;
+  padding: 3vw 10vw;
+  display: flex;
+  justify-content: space-between;
   .button {
     align-self: flex-end;
     cursor: pointer;
@@ -10,7 +12,89 @@
     background-color: transparent;
     transition: 0.5s;
     &:hover {
-      transform: translateY(-12px);
+      transform: translateY(-8px);
+    }
+  }
+  .main {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+    .description {
+      .title {
+        color: white;
+        font-size: 20px;
+        margin-bottom: 1vw;
+      }
+      .links {
+        display: flex;
+        flex-direction: column;
+        a {
+          font-size: 14px;
+          text-decoration: none;
+          margin-bottom: 0.4vw;
+          color: rgba(255, 255, 255, 0.6);
+          cursor: pointer;
+        }
+      }
+    }
+    .form {
+      h3 {
+        color: white;
+        font-size: 20px;
+        margin-bottom: 1.3vw;
+      }
+      p {
+        font-size: 14px;
+        color: white;
+        margin-bottom: 2vw;
+      }
+      .input {
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid #fff;
+        border-radius: 30px;
+        transition: 0.5s;
+        margin-bottom: 1vw;
+        input {
+          width: 100%;
+          border: none;
+          cursor: pointer;
+          padding-left: 50px;
+          background: black;
+          border-radius: 30px;
+          color: white;
+          ::placeholder {
+            color: white;
+          }
+          outline: none;
+        }
+        button {
+          padding: 15px 37px;
+          border: none;
+          color: black;
+          background-color: #fff;
+          border-radius: 30px;
+          cursor: pointer;
+          transition: 0.5s;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+        &:hover {
+          border: 2px solid rgba(255, 255, 255, 0.7);
+        }
+      }
+
+      .checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1vw;
+        p {
+          margin: auto 0;
+        }
+      }
     }
   }
 }
