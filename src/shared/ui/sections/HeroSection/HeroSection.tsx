@@ -4,7 +4,8 @@ import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 export const HeroSection = () => {
   const scroll = useRef<HTMLDivElement>(null);
-
+  const text = useRef<HTMLHeadingElement>(null);
+  const brand = useRef<HTMLParagraphElement>(null);
   useGSAP(() => {
     gsap.to(scroll.current, {
       y: -15,
@@ -13,12 +14,26 @@ export const HeroSection = () => {
       yoyo: true,
       repeat: -1,
     });
+
+    gsap
+      .timeline()
+      .from(brand.current, {
+        opacity: 0,
+        duration: 0.8,
+        y: -140,
+        delay: 0.4,
+      })
+      .from(text.current, {
+        opacity: 0,
+        y: 140,
+        duration: 0.8,
+      });
   });
   return (
     <div className={styles.layout}>
       <div className={styles.container}>
-        <p>VELORETTI BUSINESS</p>
-        <h1>Bike lease plan for employees.</h1>
+        <p ref={brand}>VELORETTI BUSINESS</p>
+        <h1 ref={text}>Bike lease plan for employees.</h1>
       </div>
       <div ref={scroll} className={styles.scroll}>
         Scroll

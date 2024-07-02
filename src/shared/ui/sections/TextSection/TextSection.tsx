@@ -24,14 +24,45 @@ const data = [
 ];
 export const TextSection = () => {
   const services = useRef<HTMLDivElement>(null);
-
+  const charges = useRef<HTMLDivElement>(null);
+  const instruction = useRef<HTMLDivElement>(null);
+  const text = useRef<HTMLDivElement>(null);
   useGSAP(() => {
     gsap.to(services.current, {
       y: -450,
-
       scrollTrigger: {
         trigger: services.current,
         start: "top 130%",
+        end: "top 15%",
+        scrub: true,
+      },
+    });
+
+    gsap.from(text.current, {
+      opacity: 0,
+      y: -200,
+      scrollTrigger: {
+        trigger: text.current,
+        start: "top 50%",
+        end: "top 10%",
+        scrub: true,
+      },
+    });
+
+    gsap.from(charges.current, {
+      x: -300,
+      scrollTrigger: {
+        trigger: charges.current,
+        start: "top 160%",
+        end: "top 15%",
+        scrub: true,
+      },
+    });
+    gsap.from(instruction.current, {
+      x: 300,
+      scrollTrigger: {
+        trigger: instruction.current,
+        start: "top 160%",
         end: "top 15%",
         scrub: true,
       },
@@ -40,7 +71,7 @@ export const TextSection = () => {
   return (
     <div ref={services}>
       <div className={styles.layout}>
-        <div className={styles.services}>
+        <div ref={text} className={styles.services}>
           <h2>Service, maintenance and insurance</h2>
           <p>
             The lease includes an all-in service package. Throughout the entire
@@ -51,7 +82,7 @@ export const TextSection = () => {
         </div>
       </div>
       <div className={styles.info}>
-        <div className={styles.infoCharge}>
+        <div ref={charges} className={styles.infoCharge}>
           <img src={imgLeft} alt="" />
           <div className={styles.infoText}>
             <h2>Free of charge for employers</h2>
@@ -62,7 +93,7 @@ export const TextSection = () => {
             </p>
           </div>
         </div>
-        <div className={styles.infoAboutWork}>
+        <div ref={instruction} className={styles.infoAboutWork}>
           <div className={styles.infoList}>
             <h2>How it works</h2>
             {data.map((item) => (
