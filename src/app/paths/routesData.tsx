@@ -1,4 +1,6 @@
+import { ElectricPage } from "../../page/ElectricPage";
 import { MainPage } from "../../page/MainPage";
+
 export const routesData = [
   {
     name: "Home",
@@ -7,7 +9,8 @@ export const routesData = [
   },
   {
     name: "About",
-    path: "/about",
+    path: "/electric",
+    component: <ElectricPage />,
   },
   {
     name: "Projects",

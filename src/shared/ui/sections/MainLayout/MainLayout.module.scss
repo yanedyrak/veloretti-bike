@@ -1,11 +1,10 @@
 .layout {
-  background-image: url("./HeroSection.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: white;
   .container {
-    padding: 365px 0px 0px 50px;
+    padding: 365px 0px 15vw 50px;
     font-weight: 500;
     overflow-y: hidden;
     p {
@@ -14,12 +13,14 @@
       letter-spacing: 0.04em;
       margin-bottom: 1vw;
     }
-    h1 {
-      text-transform: capitalize;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 70px;
-      padding-bottom: 15vw;
+    div {
+      overflow: hidden;
+      .head {
+        text-transform: capitalize;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 70px;
+      }
     }
   }
   .scroll {

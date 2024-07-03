@@ -5,17 +5,21 @@
   background-repeat: no-repeat;
   border-radius: 30px;
   .services {
-    padding: 20vw 56vw 20vw 10vw;
+    padding: 20vw 54vw 20vw 8vw;
     color: white;
+    div {
+      overflow: hidden;
 
-    h2 {
-      font-size: 50px;
-      font-weight: 300;
-    }
-    p {
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 150%;
+      h2 {
+        font-size: 50px;
+        font-weight: 300;
+        margin-bottom: 1vw;
+      }
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+      }
     }
   }
 }

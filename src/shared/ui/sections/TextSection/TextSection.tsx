@@ -27,6 +27,7 @@ export const TextSection = () => {
   const charges = useRef<HTMLDivElement>(null);
   const instruction = useRef<HTMLDivElement>(null);
   const text = useRef<HTMLDivElement>(null);
+  const paragraph = useRef<HTMLDivElement>(null);
   useGSAP(() => {
     gsap.to(services.current, {
       y: -450,
@@ -39,12 +40,20 @@ export const TextSection = () => {
     });
 
     gsap.from(text.current, {
-      opacity: 0,
-      y: -200,
+      y: -150,
       scrollTrigger: {
         trigger: text.current,
-        start: "top 50%",
-        end: "top 10%",
+        start: "top 90%",
+        end: "top 70%",
+        scrub: true,
+      },
+    });
+    gsap.from(paragraph.current, {
+      y: 100,
+      scrollTrigger: {
+        trigger: text.current,
+        start: "top 90%",
+        end: "top 70%",
         scrub: true,
       },
     });
@@ -71,14 +80,16 @@ export const TextSection = () => {
   return (
     <div ref={services}>
       <div className={styles.layout}>
-        <div ref={text} className={styles.services}>
-          <h2>Service, maintenance and insurance</h2>
-          <p>
-            The lease includes an all-in service package. Throughout the entire
-            36 months, you are fully insured against damage, theft and
-            maintenance. In addition, you always have access to roadside
-            assistance.
-          </p>
+        <div className={styles.services}>
+          <div>
+            <h2 ref={text}>Service, maintenance and insurance</h2>
+            <p ref={paragraph}>
+              The lease includes an all-in service package. Throughout the
+              entire 36 months, you are fully insured against damage, theft and
+              maintenance. In addition, you always have access to roadside
+              assistance.
+            </p>
+          </div>
         </div>
       </div>
       <div className={styles.info}>

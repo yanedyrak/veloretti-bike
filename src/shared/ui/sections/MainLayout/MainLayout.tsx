@@ -1,8 +1,15 @@
 import { useRef } from "react";
-import styles from "./HeroSection.module.scss";
+import styles from "./MainLayout.module.scss";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
-export const HeroSection = () => {
+
+export const MainLayout = ({
+  img,
+  mainText,
+}: {
+  img: string;
+  mainText: string;
+}) => {
   const scroll = useRef<HTMLDivElement>(null);
   const text = useRef<HTMLHeadingElement>(null);
   const brand = useRef<HTMLParagraphElement>(null);
@@ -18,22 +25,23 @@ export const HeroSection = () => {
     gsap
       .timeline()
       .from(brand.current, {
-        opacity: 0,
         duration: 0.8,
         y: -140,
-        delay: 0.4,
       })
       .from(text.current, {
-        opacity: 0,
-        y: 140,
-        duration: 0.8,
+        y: 400,
+        duration: 0.5,
       });
   });
   return (
-    <div className={styles.layout}>
+    <div style={{ backgroundImage: `url(${img})` }} className={styles.layout}>
       <div className={styles.container}>
-        <p ref={brand}>VELORETTI BUSINESS</p>
-        <h1 ref={text}>Bike lease plan for employees.</h1>
+        <div>
+          <p ref={brand}>VELORETTI BUSINESS</p>
+          <h1 className={styles.head} ref={text}>
+            {mainText}
+          </h1>
+        </div>
       </div>
       <div ref={scroll} className={styles.scroll}>
         Scroll

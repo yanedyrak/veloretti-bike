@@ -13,6 +13,7 @@
     transition: 0.5s;
     &:hover {
       transform: translateY(-8px);
+      opacity: 0.9;
     }
   }
   .main {
@@ -34,6 +35,10 @@
           margin-bottom: 0.4vw;
           color: rgba(255, 255, 255, 0.6);
           cursor: pointer;
+          transition: 0.5s;
+          &:hover {
+            color: white;
+          }
         }
       }
     }
@@ -60,13 +65,14 @@
           border: none;
           cursor: pointer;
           padding-left: 50px;
-          background: black;
+          background: #141615;
           border-radius: 30px;
           color: white;
-          ::placeholder {
-            color: white;
-          }
+          font-size: 18px;
           outline: none;
+          &::placeholder {
+            font-size: 14px;
+          }
         }
         button {
           padding: 15px 37px;
