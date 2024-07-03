@@ -8,7 +8,7 @@ export const ElectricDescription = () => {
   const layout = useRef<HTMLDivElement>(null);
   useGSAP(() => {
     gsap.to(layout.current, {
-      y: -400,
+      y: -300,
       scrollTrigger: {
         trigger: layout.current,
         start: "top 90%",

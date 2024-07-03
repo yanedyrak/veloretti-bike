@@ -1,7 +1,16 @@
 .navbar {
   display: flex;
+  background-color: transparent;
+  width: 100%;
+  top: 0;
+  right: 0;
   padding: 30px 50px;
+  position: fixed;
   justify-content: space-between;
+  transition: 0.4s;
+  &:hover {
+    background: white;
+  }
   .logoWithLinks {
     display: flex;
     align-items: center;
