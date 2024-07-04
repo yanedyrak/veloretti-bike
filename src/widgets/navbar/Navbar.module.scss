@@ -1,5 +1,10 @@
+.scroll {
+  transform: translateY(-100px);
+}
+
 .navbar {
   display: flex;
+
   background-color: transparent;
   width: 100%;
   top: 0;

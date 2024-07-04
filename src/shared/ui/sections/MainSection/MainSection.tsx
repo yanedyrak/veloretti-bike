@@ -1,7 +1,7 @@
 import styles from "./MainSection.module.scss";
-export const MainSection = () => {
+export const MainSection = ({ url }: { url: string }) => {
   return (
-    <div className={styles.layout}>
+    <div style={{ backgroundImage: `url(${url})` }} className={styles.layout}>
       <div className={styles.container}>
         <p className={styles.description}>THE ELECTRIC SUMMER DEAL</p>
         <h1 className={styles.title}>Now $2.999</h1>
