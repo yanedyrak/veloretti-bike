@@ -1,4 +1,3 @@
-import { ElectricPage } from "../../page/ElectricPage";
 import { MainPage } from "../../page/MainPage";
 
 export const routesData = [
@@ -10,7 +9,6 @@ export const routesData = [
   {
     name: "About",
     path: "/electric",
-    component: <ElectricPage />,
   },
   {
     name: "Projects",

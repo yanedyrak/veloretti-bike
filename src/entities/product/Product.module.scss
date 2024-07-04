@@ -1,37 +1,69 @@
 .container {
-  padding: 1.4vw;
+  padding: 1.5vw;
   display: inline-flex;
   border-radius: 10px;
   flex-direction: column;
-  background-color: #ebedee;
-  .nameAndPrice {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  background-color: #e1e3e3;
+  .nameAndHeight {
+    margin-top: 1vw;
     .name {
-      font-size: 30px;
+      font-size: 45px;
       font-weight: 200;
+      margin-bottom: 0.5vw;
     }
-    .price {
-      font-size: 15px;
-      text-transform: uppercase;
+    .height {
+      font-size: 20px;
+      font-weight: 200;
     }
   }
   .img {
     align-self: center;
-    width: 80%;
+    width: 60%;
   }
-  .colors {
-    align-self: center;
-
+  .colorsAndButton {
     display: flex;
     align-items: center;
-    gap: 1.5vw;
+    justify-content: space-between;
+    .buttonAndMore {
+      display: flex;
+      align-items: center;
+      gap: 1.5vw;
+      .button {
+        padding: 20px 40px;
+        background-color: white;
+        border-radius: 30px;
+        cursor: pointer;
+        border: none;
+        font-size: 16px;
+        font-weight: 200;
+        transition: 0.5s;
 
-    .active {
-      outline: 1px solid black;
-      padding: 3px;
-      border-radius: 50%;
+        &:hover {
+          color: white;
+          background: #000;
+        }
+      }
+      .link {
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 16px;
+        transition: 0.5s;
+
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+
+    .colors {
+      display: flex;
+      align-items: center;
+      gap: 1.5vw;
+      .active {
+        outline: 1px solid black;
+        padding: 5px;
+        border-radius: 50%;
+      }
     }
   }
 }

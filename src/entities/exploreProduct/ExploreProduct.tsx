@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import styles from "./InfoProduct.module.scss";
+import styles from "./ExploreProduct.module.scss";
 
-export const InfoProduct = () => {
+export const ExploreProduct = () => {
   return (
     <div className={styles.container}>
       <div className={styles.nameAndPrice}>

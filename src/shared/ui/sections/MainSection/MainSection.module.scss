@@ -1,0 +1,24 @@
+.layout {
+  background-image: url("https://www.veloretti.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fqp8eahdr9bo6%2F3BkIRBLr9BO0c98MT7lsqy%2F3fc1e3d7f42753720ea74e42814ef5ed%2FHomepage_desktop_2.jpg&w=2048&q=75");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  .container {
+    padding: 20% 0vw 0vw 3vw;
+
+    .title {
+      padding: 1vw 0;
+      font-size: 60px;
+      color: white;
+      font-weight: 400;
+    }
+    .description {
+      font-size: 11px;
+      color: white;
+      font-weight: 200;
+      letter-spacing: 1.4px;
+    }
+  }
+}

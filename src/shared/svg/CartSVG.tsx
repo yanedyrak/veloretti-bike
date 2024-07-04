@@ -1,8 +1,8 @@
 export const CartSVG = () => {
   return (
     <svg
-      width="23"
-      height="16"
+      width="35"
+      height="35"
       viewBox="0 0 23 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
