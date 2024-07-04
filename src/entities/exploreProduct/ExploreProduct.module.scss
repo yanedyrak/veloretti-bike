@@ -1,0 +1,60 @@
+.container {
+  padding: 1vw;
+  border-radius: 10px;
+  display: inline-flex;
+  flex-direction: column;
+  background-color: #e1e3e3;
+  width: 100%;
+
+  .nameAndPrice {
+    margin-top: 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .name {
+      font-size: 40px;
+      font-weight: 200;
+    }
+    .price {
+      font-size: 20px;
+      font-weight: 200;
+    }
+    margin-bottom: 2vw;
+  }
+  .img {
+    width: 100%;
+
+    border-radius: 10px;
+    align-self: center;
+    margin-bottom: 2vw;
+  }
+  .buttonAndMore {
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+    .button {
+      padding: 20px 40px;
+      background-color: white;
+      border-radius: 30px;
+      cursor: pointer;
+      border: none;
+      font-size: 16px;
+      font-weight: 200;
+      transition: 0.5s;
+
+      &:hover {
+        color: white;
+        background: #000;
+      }
+    }
+    .link {
+      color: rgba(0, 0, 0, 0.6);
+      font-size: 16px;
+      transition: 0.5s;
+
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+}

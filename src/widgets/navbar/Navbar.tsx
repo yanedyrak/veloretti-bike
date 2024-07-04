@@ -10,9 +10,9 @@ export const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logoWithLinks}>
-        <div className={styles.logo}>
+        <Link to="/" className={styles.logo}>
           <LogoSVG />
-        </div>
+        </Link>
 
         <div className={styles.links}>
           {data.map((item) => (

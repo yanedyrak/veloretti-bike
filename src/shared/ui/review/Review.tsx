@@ -2,13 +2,13 @@ import styles from "./Review.module.scss";
 export const Review = () => {
   return (
     <div className={styles.review}>
-      <p>
+      <p className={styles.text}>
         “This second-generation Ace is a superhero amongst urban e- bikes…
         9/10.”
       </p>
       <svg
-        width="171"
-        height="69"
+        width="231"
+        height="110"
         viewBox="0 0 171 69"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

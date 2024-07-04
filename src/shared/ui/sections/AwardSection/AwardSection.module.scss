@@ -1,0 +1,24 @@
+.layout {
+  background-image: url("https://www.veloretti.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fqp8eahdr9bo6%2F6rgJ5NlfyLKZ8XpjXVUwNk%2Fd68578e1221f80842726e7e5e23aaa88%2FAce_Two_Matte_Black_1.png&w=2048&q=75");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .container {
+    color: white;
+    width: 30vw;
+    padding: 20vw 0vw 20vw 8vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+
+    .title {
+      font-size: 50px;
+    }
+    .description {
+      font-size: 17px;
+      font-weight: 200;
+      margin-bottom: 10vw;
+    }
+  }
+}
