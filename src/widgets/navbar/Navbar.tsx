@@ -34,13 +34,22 @@ export const Navbar = () => {
       }`}
     >
       <div className={styles.logoWithLinks}>
-        <Link to="/" className={styles.logo}>
+        <Link
+          onClick={() => window.scrollTo(0, 0)}
+          to="/"
+          className={styles.logo}
+        >
           <LogoSVG />
         </Link>
 
         <div className={`${styles.links}`}>
           {data.map((item) => (
-            <Link className={styles.link} key={item} to={`/${item}`}>
+            <Link
+              onClick={() => window.scrollTo(0, 0)}
+              className={styles.link}
+              key={item}
+              to={`/${item}`}
+            >
               {item}
             </Link>
           ))}
