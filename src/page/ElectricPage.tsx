@@ -1,6 +1,7 @@
 import { MainSection } from "../shared/ui/sections/MainSection/MainSection";
 import { BikesListSection } from "../shared/ui/sections/BikesListSection/BikesListSection";
 import { ElectricDescriptionSection } from "../shared/ui/sections/ElectricDescriptionSection/ElectricDescriptionSection";
+import { MobileAppSection } from "../shared/ui/sections/MobileAppSection/MobileAppSection";
 export const ElectricPage = () => {
   return (
     <>
@@ -18,6 +19,7 @@ export const ElectricPage = () => {
       ></video>
 
       <ElectricDescriptionSection />
+      <MobileAppSection />
     </>
   );
 };

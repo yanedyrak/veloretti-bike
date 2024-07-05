@@ -1,10 +1,9 @@
 .scroll {
   transform: translateY(-100px);
 }
-
 .navbar {
   display: flex;
-  background-color: transparent;
+
   width: 100%;
   top: 0;
   right: 0;
@@ -28,13 +27,13 @@
       .link {
         display: block;
         margin: auto 0;
-        color: white;
+
         font-size: 16px;
         line-height: 125%;
         letter-spacing: 1px;
         text-decoration: none;
         text-transform: uppercase;
-        font-weight: 200;
+
         transition: 0.4s;
         position: relative;
         cursor: pointer;
@@ -45,7 +44,7 @@
           height: 1px;
           bottom: 0;
           left: 0;
-          background-color: black;
+          background-color: white;
           transform: scaleX(0);
           transition: transform 0.2s ease-in-out;
         }
@@ -66,37 +65,8 @@
       background-color: transparent;
       border: none;
       cursor: pointer;
-
-      svg {
-        path {
-          transition: 0.4s;
-          stroke: white;
-        }
-      }
       &:first-child {
         display: none;
-      }
-    }
-  }
-  &:hover {
-    background: white;
-    .logoWithLinks {
-      .logo {
-        fill: black;
-      }
-      .links {
-        .link {
-          color: black;
-        }
-      }
-    }
-    .interface {
-      .button {
-        svg {
-          path {
-            stroke: black;
-          }
-        }
       }
     }
   }
