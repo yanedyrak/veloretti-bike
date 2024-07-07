@@ -1,0 +1,31 @@
+.container {
+  display: inline-block;
+  position: relative;
+  .soldOut {
+    position: absolute;
+    right: 1vw;
+    top: 1vw;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+  }
+  .image {
+    width: 100%;
+  }
+  .info {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    .title {
+      font-size: 18px;
+      font-weight: 400;
+      color: black;
+      margin-bottom: 0.2vw;
+    }
+    .price {
+      font-size: 20px;
+      font-weight: 200;
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}

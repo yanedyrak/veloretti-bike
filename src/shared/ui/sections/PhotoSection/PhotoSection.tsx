@@ -15,7 +15,9 @@ export const PhotoSection = () => {
             gridRowStart: 1,
             gridRowEnd: 3,
           }}
-        />
+        >
+          @wouterkann
+        </div>
         <div
           style={{
             backgroundImage: `url("https://www.veloretti.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fqp8eahdr9bo6%2F01anrcdhZgcYsnzFvXgfnq%2F24863bea526e4404f94392e833c5fb2c%2Fimage.png&w=3840&q=75")`,
@@ -27,7 +29,9 @@ export const PhotoSection = () => {
             gridRowStart: 3,
             gridRowEnd: 5,
           }}
-        />
+        >
+          @carlanicieza
+        </div>
         <div
           style={{
             backgroundImage: `url("https://www.veloretti.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fqp8eahdr9bo6%2F2SGsmgZGAUJoaVZ5pNQOxy%2F154982a030fa3512f5d4ecb2642fa8ef%2Fimage.png&w=3840&q=75")`,
@@ -39,7 +43,9 @@ export const PhotoSection = () => {
             gridRowStart: 1,
             gridRowEnd: 5,
           }}
-        />
+        >
+          @mr.rooftop
+        </div>
         <div
           style={{
             backgroundImage: `url("https://www.veloretti.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fqp8eahdr9bo6%2F3A83DoxmB3PMwiM5qLNblC%2F30e428eeebdfb370dafcabd1ad7031f1%2Fimage.png&w=3840&q=75")`,
@@ -51,7 +57,9 @@ export const PhotoSection = () => {
             gridRowStart: 1,
             gridRowEnd: 4,
           }}
-        />
+        >
+          @athenadb
+        </div>
         <div
           style={{
             backgroundImage: `url("https://www.veloretti.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fqp8eahdr9bo6%2F60XAPOVoZkGu2udQFN9OYh%2Fba8717ae63313ef456898b7337644529%2Fimage.png&w=3840&q=75")`,
@@ -63,7 +71,9 @@ export const PhotoSection = () => {
             gridRowStart: 4,
             gridRowEnd: 5,
           }}
-        />
+        >
+          @ap.notte
+        </div>
         <div
           style={{
             backgroundImage: `url("https://www.veloretti.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fqp8eahdr9bo6%2F1q5yc6Dtdsd3jFsBMpacpU%2Fe2736f0affa4b863d65c1d105a2a970e%2Fimage.png&w=3840&q=75")`,
@@ -75,7 +85,9 @@ export const PhotoSection = () => {
             gridRowStart: 4,
             gridRowEnd: 5,
           }}
-        />
+        >
+          @mathildenauta
+        </div>
       </div>
     </div>
   );

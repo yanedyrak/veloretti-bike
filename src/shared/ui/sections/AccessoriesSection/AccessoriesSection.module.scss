@@ -1,0 +1,21 @@
+.section {
+  margin: 100px 0px;
+  .title {
+    margin: 5vw 0;
+    text-align: center;
+    font-size: 100px;
+
+    font-weight: 400;
+  }
+  .container {
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    .photo {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
