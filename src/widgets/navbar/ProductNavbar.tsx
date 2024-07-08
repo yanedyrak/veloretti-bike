@@ -5,39 +5,18 @@ import { ProfileSVG } from "../../shared/svg/ProfileSVG";
 import { CartSVG } from "../../shared/svg/CartSVG";
 import { BurgerSVG } from "../../shared/svg/BurgerSVG";
 import { LogoSVG } from "../../shared/svg/LogoSVG";
-import { useEffect, useRef, useState } from "react";
 import { useAppDispatch } from "../../shared/hooks/useAppDispatch";
 import { openDrawer } from "../../shared/store/drawerSlice";
 const data = ["electric", "city", "kids", "accessories", "leasing"];
-export const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isWhite, setIsWhite] = useState(false);
+export const ProductNavbar = () => {
   const dispatch = useAppDispatch();
-  const prev = useRef(0);
-  useEffect(() => {
-    const handleScroll = () => {
-      if (prev.current < window.scrollY) {
-        setIsScrolled(true);
-        setIsWhite(false);
-        prev.current = window.scrollY;
-      } else {
-        setIsScrolled(false);
-        window.scrollY > 40 ? setIsWhite(true) : setIsWhite(false);
-
-        prev.current = window.scrollY;
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <nav
-      className={`${styles.navbar} ${isScrolled ? styles.scroll : ""}`}
+      className={`${styles.navbar}`}
       style={{
-        backgroundColor: isWhite ? "white" : "transparent",
+        backgroundColor: "white",
+        position: "relative",
       }}
     >
       <div className={styles.logoWithLinks}>
@@ -50,7 +29,7 @@ export const Navbar = () => {
           }
           to="/"
           className={styles.logo}
-          style={{ fill: isWhite ? "black" : "white" }}
+          style={{ fill: "black" }}
         >
           <LogoSVG />
         </Link>
@@ -62,7 +41,7 @@ export const Navbar = () => {
               className={styles.link}
               key={item}
               to={`/${item}`}
-              style={{ color: isWhite ? "black" : "white" }}
+              style={{ color: "black" }}
             >
               {item}
             </Link>
@@ -71,16 +50,16 @@ export const Navbar = () => {
       </div>
       <div className={styles.interface}>
         <button className={styles.button}>
-          <BurgerSVG stroke={isWhite ? "black" : "white"} />
+          <BurgerSVG stroke={"black"} />
         </button>
         <button className={styles.button}>
-          <ProfileSVG stroke={isWhite ? "black" : "white"} />
+          <ProfileSVG stroke={"black"} />
         </button>
         <button
           className={styles.button}
           onClick={() => dispatch(openDrawer())}
         >
-          <CartSVG stroke={isWhite ? "black" : "white"} />
+          <CartSVG stroke={"black"} />
         </button>
       </div>
     </nav>

@@ -1,6 +1,7 @@
 import { AccessoriesSection } from "../shared/ui/sections/AccessoriesSection/AccessoriesSection";
 import { MainSection } from "../shared/ui/sections/MainSection/MainSection";
 import { AccessoryType } from "../shared/types/Accessory";
+import { Navbar } from "../widgets/navbar/Navbar";
 const data: AccessoryType[] = [
   {
     id: 1,
@@ -38,6 +39,7 @@ const data: AccessoryType[] = [
 export const AccessoriesPage = () => {
   return (
     <>
+      <Navbar />
       <MainSection
         url={
           "https://www.veloretti.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fqp8eahdr9bo6%2F2o3UpJ6O44tkGdGQjUsQbL%2F67cf55ba238a4cd58063310be08375e4%2FAccessories_desktop.jpg&w=2048&q=75"

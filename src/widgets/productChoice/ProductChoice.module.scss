@@ -1,13 +1,77 @@
 .layout {
   .nameAndPrice {
     color: black;
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     .name {
-      font-size: 26px;
+      font-size: 40px;
       font-weight: 400;
     }
     .price {
-      font-size: 22px;
+      font-size: 33px;
+      font-weight: 200;
+    }
+  }
+  .models {
+    overflow-x: scroll;
+    padding: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    .title {
+      font-size: 20px;
       font-weight: 400;
+      line-height: 125%;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 2vw;
+    }
+    .modelList {
+      display: flex;
+      gap: 2vw;
+
+      .model {
+        display: flex;
+        flex-direction: column;
+        .modelImage {
+          border: 1px solid #000;
+          margin-bottom: 1vw;
+          border-radius: 10px;
+          background-color: #f0f0f0;
+          img {
+            width: 200px;
+          }
+        }
+        .modelName {
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 125%;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+  .colors {
+    padding: 20px 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    .title {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 125%;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 2vw;
+    }
+    .colorList {
+      display: flex;
+      align-items: center;
+      gap: 1.5vw;
+      .active {
+        outline: 1px solid black;
+        padding: 5px;
+        border-radius: 50%;
+      }
     }
   }
 }

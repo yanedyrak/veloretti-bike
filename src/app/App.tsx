@@ -7,7 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { gsap } from "gsap";
 import { Footer } from "../widgets/footer/Footer";
-import { Navbar } from "../widgets/navbar/Navbar";
+
 import CustomDrawer from "../widgets/drawer/CustomDrawer";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -17,7 +17,7 @@ function App() {
     <BrowserRouter>
       <Provider store={store}>
         <CustomDrawer />
-        <Navbar />
+
         <Paths />
         <Footer />
       </Provider>

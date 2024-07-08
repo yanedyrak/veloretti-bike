@@ -12,8 +12,10 @@ export const Product = () => {
       <img className={styles.img} src={img} alt="" />
       <div className={styles.colorsAndButton}>
         <div className={styles.buttonAndMore}>
-          <button className={styles.button}>Buy now</button>
-          <Link className={styles.link} to="/">
+          <Link to="/product" onClick={() => window.scrollTo(0, 0)}>
+            <button className={styles.button}>Buy now</button>
+          </Link>
+          <Link className={styles.link} to="/product">
             Learn more
           </Link>
         </div>

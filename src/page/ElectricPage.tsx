@@ -2,9 +2,11 @@ import { MainSection } from "../shared/ui/sections/MainSection/MainSection";
 import { BikesListSection } from "../shared/ui/sections/BikesListSection/BikesListSection";
 import { ElectricDescriptionSection } from "../shared/ui/sections/ElectricDescriptionSection/ElectricDescriptionSection";
 import { MobileAppSection } from "../shared/ui/sections/MobileAppSection/MobileAppSection";
+import { Navbar } from "../widgets/navbar/Navbar";
 export const ElectricPage = () => {
   return (
     <>
+      <Navbar />
       <MainSection url="https://www.veloretti.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fqp8eahdr9bo6%2F7kRdyhXbdMusksq7nScllw%2Ff80eb0e3f0af5afc5066898c23f9c075%2FElectric1_desktop.png&w=3840&q=75" />
       <BikesListSection />
       <video
