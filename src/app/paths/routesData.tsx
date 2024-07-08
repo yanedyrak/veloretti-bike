@@ -3,6 +3,8 @@ import { KidsPage } from "../../page/KidsPage";
 import { MainPage } from "../../page/MainPage";
 import { AccessoriesPage } from "../../page/AccessoriesPage";
 import { LeasingPage } from "../../page/LeasingPage";
+import { CityPage } from "../../page/CityPage";
+import { ProductPage } from "../../page/ProductPage";
 
 export const routesData = [
   {
@@ -29,5 +31,15 @@ export const routesData = [
     name: "Leasing",
     path: "/leasing",
     component: <LeasingPage />,
+  },
+  {
+    name: "City",
+    path: "/city",
+    component: <CityPage />,
+  },
+  {
+    name: "Product",
+    path: "/product",
+    component: <ProductPage />,
   },
 ];

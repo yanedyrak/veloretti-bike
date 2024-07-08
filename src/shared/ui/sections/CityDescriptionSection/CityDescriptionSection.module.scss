@@ -1,0 +1,27 @@
+.section {
+  position: relative;
+  .title {
+    text-align: center;
+    font-size: 160px;
+    font-weight: 500;
+    margin: 15vw 10vw;
+  }
+  .container {
+    margin: 0 5vw;
+    position: relative;
+    height: 160vh;
+    .info {
+      position: absolute;
+      top: 40vw;
+      left: 35vw;
+      width: 26vw;
+      font-size: 30px;
+      font-weight: 400;
+      padding: 4vw;
+      color: rgba(0, 0, 0, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      background-color: white;
+    }
+  }
+}

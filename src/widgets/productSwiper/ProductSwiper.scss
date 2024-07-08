@@ -1,0 +1,28 @@
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next,
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover {
+  font-size: inherit;
+  color: black;
+  opacity: 1;
+  transform: scale(2);
+}
+.ant-carousel .slick-dots {
+  display: flex;
+  gap: 10px;
+  padding: 0px 0px 5vw 0px;
+}
+.ant-carousel .slick-dots li button {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #b6b6b6;
+  opacity: 0.8;
+}
+.ant-carousel .slick-dots li.slick-active button {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #696969;
+  opacity: 0.9;
+}
