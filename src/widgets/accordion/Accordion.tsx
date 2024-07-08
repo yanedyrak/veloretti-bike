@@ -10,7 +10,7 @@ export const Accordion = () => {
   const accordion = useRef<HTMLDivElement>(null);
   useGSAP(() => {
     gsap.from(head.current, {
-      y: 200,
+      y: 300,
       ease: "power1.inOut",
       scrollTrigger: {
         trigger: head.current,
@@ -41,7 +41,7 @@ export const Accordion = () => {
           Collapse: {
             headerBg: "#f9f9f9",
             colorBorder: "none",
-            fontSize: 24,
+            fontSize: 40,
           },
         },
       }}
@@ -55,8 +55,8 @@ export const Accordion = () => {
           <h1
             ref={head}
             style={{
-              fontSize: 110,
-              fontWeight: "300",
+              fontSize: "8vw",
+              fontWeight: "400",
               paddingBottom: "3vw",
               borderBottom: "1px solid rgba(0, 0, 0, 0.1)",
             }}

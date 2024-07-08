@@ -2,6 +2,7 @@ import { ElectricPage } from "../../page/ElectricPage";
 import { KidsPage } from "../../page/KidsPage";
 import { MainPage } from "../../page/MainPage";
 import { AccessoriesPage } from "../../page/AccessoriesPage";
+import { LeasingPage } from "../../page/LeasingPage";
 
 export const routesData = [
   {
@@ -25,7 +26,8 @@ export const routesData = [
     component: <AccessoriesPage />,
   },
   {
-    name: "Contact",
-    path: "/contact",
+    name: "Leasing",
+    path: "/leasing",
+    component: <LeasingPage />,
   },
 ];

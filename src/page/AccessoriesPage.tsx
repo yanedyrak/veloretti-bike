@@ -26,6 +26,14 @@ const data: AccessoryType[] = [
     title: "Electric Two",
     price: "9.99",
   },
+  {
+    id: 4,
+    soldOut: true,
+    image:
+      "https://www.veloretti.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fqp8eahdr9bo6%2F38bbZV2TFIef4GDmNyjoos%2F0f4bb2d33011d7efb66318892fde181f%2FBasket_Epic_Retro_desktop.png&w=1920&q=75",
+    title: "Electric Two",
+    price: "13.99",
+  },
 ];
 export const AccessoriesPage = () => {
   return (
@@ -76,6 +84,7 @@ export const AccessoriesPage = () => {
         title="Carriers and baskets"
       />
 
+      <AccessoriesSection accessories={data} title="Bells and extras" />
       <AccessoriesSection accessories={data} title="Lights and locks" />
 
       <AccessoriesSection

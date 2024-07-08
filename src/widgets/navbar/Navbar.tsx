@@ -6,10 +6,13 @@ import { CartSVG } from "../../shared/svg/CartSVG";
 import { BurgerSVG } from "../../shared/svg/BurgerSVG";
 import { LogoSVG } from "../../shared/svg/LogoSVG";
 import { useEffect, useRef, useState } from "react";
-const data = ["electric", "city", "kids", "accessories", "stores", "leasing"];
+import { useAppDispatch } from "../../shared/hooks/useAppDispatch";
+import { openDrawer } from "../../shared/store/drawerSlice";
+const data = ["electric", "city", "kids", "accessories", "leasing"];
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isWhite, setIsWhite] = useState(false);
+  const dispatch = useAppDispatch();
   const prev = useRef(0);
   useEffect(() => {
     const handleScroll = () => {
@@ -73,7 +76,10 @@ export const Navbar = () => {
         <button className={styles.button}>
           <ProfileSVG stroke={isWhite ? "black" : "white"} />
         </button>
-        <button className={styles.button}>
+        <button
+          className={styles.button}
+          onClick={() => dispatch(openDrawer())}
+        >
           <CartSVG stroke={isWhite ? "black" : "white"} />
         </button>
       </div>

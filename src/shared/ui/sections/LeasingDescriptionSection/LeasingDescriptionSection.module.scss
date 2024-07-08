@@ -1,0 +1,51 @@
+.section {
+  .container {
+    padding: 10vw 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .image {
+      width: 45vw;
+    }
+    .info {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      .title {
+        width: 25vw;
+        font-size: 70px;
+        font-weight: 400;
+        margin-bottom: 2vw;
+      }
+      .description {
+        width: 25vw;
+        font-size: 17px;
+        letter-spacing: 1px;
+        color: rgba(0, 0, 0, 0.8);
+        font-weight: 200;
+        margin-bottom: 2.5vw;
+      }
+
+      .link {
+        margin-bottom: 1vw;
+
+        color: black;
+        font-size: 20px;
+        font-weight: 200;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+          color: #5a5a5a;
+        }
+      }
+    }
+  }
+  .photo {
+    height: 100vh;
+    background-image: url("https://www.veloretti.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fqp8eahdr9bo6%2F4V24C7dLyFBW7k5YyyqN84%2F287ff262a5285b6f92c23726209c7dc1%2FLeaseImg3_desktop.png&w=1920&q=75");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
