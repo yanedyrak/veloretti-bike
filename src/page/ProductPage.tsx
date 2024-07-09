@@ -1,20 +1,11 @@
-import { ProductSwiper } from "../widgets/productSwiper/productSwiper";
-import { ProductChoice } from "../widgets/productChoice/ProductChoice";
 import { ProductNavbar } from "../widgets/navbar/ProductNavbar";
+import { ProductView } from "../widgets/ProductView/ProductView";
 
 export const ProductPage = () => {
   return (
     <>
       <ProductNavbar />
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "65% 35%",
-        }}
-      >
-        <ProductSwiper />
-        <ProductChoice />
-      </div>
+      <ProductView />
     </>
   );
 };

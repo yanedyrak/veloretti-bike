@@ -1,5 +1,12 @@
 .layout {
+  height: 100vh;
+  overflow: scroll;
+  position: relative;
   .nameAndPrice {
+    position: sticky;
+    background-color: #f6f6f6;
+    top: 0;
+    right: 0;
     color: black;
     display: flex;
     padding: 50px;
@@ -53,7 +60,7 @@
     }
   }
   .colors {
-    padding: 20px 50px;
+    padding: 50px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     .title {
       font-size: 20px;
@@ -67,10 +74,28 @@
       display: flex;
       align-items: center;
       gap: 1.5vw;
-      .active {
-        outline: 1px solid black;
-        padding: 5px;
-        border-radius: 50%;
+    }
+  }
+  .accessories {
+    padding: 50px;
+    .title {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 125%;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 6vw;
+    }
+    .accessoriesList {
+      display: flex;
+      flex-direction: column;
+      .name {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 125%;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 0.3vw;
       }
     }
   }

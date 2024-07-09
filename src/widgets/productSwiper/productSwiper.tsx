@@ -6,7 +6,7 @@ export const ProductSwiper = () => (
       style={{
         width: "100%",
         margin: "0 auto",
-        padding: "1vw 10vw",
+        padding: "0 2vw",
         backgroundColor: "#f0f0f0",
       }}
     >
