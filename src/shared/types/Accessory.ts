@@ -7,5 +7,5 @@ export type AccessoryType = {
   soldOut: boolean;
   image: string;
   title: string;
-  price: string;
+  price: number;
 };

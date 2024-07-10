@@ -1,3 +1,6 @@
+import { useAppDispatch } from "../../shared/hooks/useAppDispatch";
+import { useAppSelector } from "../../shared/hooks/useAppSelector";
+import { change } from "../../shared/store/careSlice";
 import styles from "./ProductCare.module.scss";
 export const ProductCare = ({
   price,
@@ -5,13 +8,22 @@ export const ProductCare = ({
   plusList,
   popular,
 }: {
-  price: string;
+  price: number;
   title: string;
   plusList: string[];
   popular?: boolean;
 }) => {
+  const titleFromStore = useAppSelector((state) => state.care.title);
+  const dispatch = useAppDispatch();
   return (
-    <div className={styles.container}>
+    <div
+      onClick={() => dispatch(change({ price, title }))}
+      className={styles.container}
+      style={{
+        border:
+          titleFromStore === title ? "1px solid black" : "1px solid #E5E5E5",
+      }}
+    >
       <div className={styles.info}>
         <div>
           <p className={styles.price}>+$ {price} / year</p>

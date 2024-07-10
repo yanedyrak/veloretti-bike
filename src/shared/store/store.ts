@@ -1,9 +1,15 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { drawerSlice } from "./drawerSlice";
+import { colorSlice } from "./colorSlice";
+import { careSlice } from "./careSlice";
+import { accessoriesSlice } from "./accessoriesSlice";
 
 export const store = configureStore({
   reducer: {
     drawer: drawerSlice.reducer,
+    color: colorSlice.reducer,
+    care: careSlice.reducer,
+    accessories: accessoriesSlice.reducer,
   },
 });
 

@@ -1,8 +1,9 @@
 import { AccessoriesCategories } from "./Accessory";
 import { Product } from "../../entities/product/Product";
 
-type Color = {
+export type Color = {
   value: string;
+  images: string[];
 };
 type ProductModel = {
   id: number;
