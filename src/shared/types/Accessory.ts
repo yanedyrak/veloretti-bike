@@ -1,4 +1,7 @@
-export type AccessoriesCategories = AccessoryType[];
+export type AccessoriesCategories = {
+  title: string;
+  accessories: AccessoryType[];
+};
 export type AccessoryType = {
   id: number;
   soldOut: boolean;

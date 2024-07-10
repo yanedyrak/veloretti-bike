@@ -1,21 +1,21 @@
 import { AccessoriesCategories } from "./Accessory";
-
-type Photo = string;
+import { Product } from "../../entities/product/Product";
 
 type Color = {
+  value: string;
+};
+type ProductModel = {
   id: number;
   name: string;
-  photos: Photo[];
+  image: string;
 };
-
 export type Product = {
   id: number;
   title: string;
   riderHeight: string;
   price: number;
-  description: string;
-  category: string;
-  image: string;
-  color: Color[];
+  models: ProductModel[];
+  images: string[];
+  colors: Color[];
   accessories: AccessoriesCategories[];
 };

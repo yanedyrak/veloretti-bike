@@ -1,8 +1,8 @@
 export const Color = ({
-  color,
+  value,
   isActive,
 }: {
-  color: string;
+  value: string;
   isActive?: boolean;
 }) => {
   return isActive ? (
@@ -18,7 +18,7 @@ export const Color = ({
           width: "30px",
           height: "30px",
           borderRadius: "50%",
-          backgroundColor: color,
+          backgroundColor: value,
         }}
       ></div>
     </div>
@@ -28,7 +28,7 @@ export const Color = ({
         width: "30px",
         height: "30px",
         borderRadius: "50%",
-        backgroundColor: color,
+        backgroundColor: value,
       }}
     ></div>
   );
