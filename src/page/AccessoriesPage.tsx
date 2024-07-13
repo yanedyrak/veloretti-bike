@@ -9,7 +9,7 @@ const data: AccessoryType[] = [
     image:
       "https://www.veloretti.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fqp8eahdr9bo6%2F2YADqDQsWHLc1C02aR1Ory%2F37de2506f176f6c4c155be6b81c93825%2FFront_carrier_silver___thumbnail_desktop.jpg&w=1920&q=75",
     title: "Electric Two",
-    price: "9.99",
+    price: 9.99,
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const data: AccessoryType[] = [
     image:
       "https://www.veloretti.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fqp8eahdr9bo6%2F2YADqDQsWHLc1C02aR1Ory%2F37de2506f176f6c4c155be6b81c93825%2FFront_carrier_silver___thumbnail_desktop.jpg&w=1920&q=75",
     title: "Electric Two",
-    price: "9.99",
+    price: 9.99,
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const data: AccessoryType[] = [
     image:
       "https://www.veloretti.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fqp8eahdr9bo6%2F2YADqDQsWHLc1C02aR1Ory%2F37de2506f176f6c4c155be6b81c93825%2FFront_carrier_silver___thumbnail_desktop.jpg&w=1920&q=75",
     title: "Electric Two",
-    price: "9.99",
+    price: 9.99,
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const data: AccessoryType[] = [
     image:
       "https://www.veloretti.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fqp8eahdr9bo6%2F38bbZV2TFIef4GDmNyjoos%2F0f4bb2d33011d7efb66318892fde181f%2FBasket_Epic_Retro_desktop.png&w=1920&q=75",
     title: "Electric Two",
-    price: "13.99",
+    price: 13.99,
   },
 ];
 export const AccessoriesPage = () => {

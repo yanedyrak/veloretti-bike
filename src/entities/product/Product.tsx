@@ -19,34 +19,6 @@ export const Product = () => {
             Learn more
           </Link>
         </div>
-        <div className={styles.colors}>
-          <div className={styles.active}>
-            <div
-              style={{
-                width: "40px",
-                height: "40px",
-                borderRadius: "50%",
-                backgroundColor: "black",
-              }}
-            ></div>
-          </div>
-          <div
-            style={{
-              width: "40px",
-              height: "40px",
-              borderRadius: "50%",
-              backgroundColor: "#595959",
-            }}
-          ></div>
-          <div
-            style={{
-              width: "40px",
-              height: "40px",
-              borderRadius: "50%",
-              backgroundColor: "gray",
-            }}
-          ></div>
-        </div>
       </div>
     </div>
   );

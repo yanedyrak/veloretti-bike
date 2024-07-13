@@ -14,11 +14,11 @@
     align-items: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     .name {
-      font-size: 40px;
+      font-size: 2rem;
       font-weight: 400;
     }
     .price {
-      font-size: 50px;
+      font-size: 2rem;
       font-weight: 200;
     }
   }
@@ -66,8 +66,10 @@
   .button {
     display: flex;
     justify-content: center;
+    margin-bottom: 5vw;
     button {
-      padding: 20px 40%;
+      cursor: pointer;
+      padding: 20px 30%;
       font-size: 18px;
       border-radius: 40px;
       color: white;
@@ -77,6 +79,14 @@
       letter-spacing: 1px;
       text-transform: uppercase;
       background-color: black;
+      border: 1px solid black;
+      transition: 0.5s;
+    }
+    &:hover {
+      button {
+        background-color: white;
+        color: black;
+      }
     }
   }
 }

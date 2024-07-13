@@ -3,18 +3,15 @@ import { BikeAccessory } from "../../entities/BikeAccessory/BikeAccessory";
 import { ProductCare } from "../ProductCare/ProductCare";
 import { Color } from "../../entities/Color/Color";
 import React from "react";
-import { useAppDispatch } from "../../shared/hooks/useAppDispatch";
-import { setColor } from "../../shared/store/colorSlice";
+
 import { Product } from "../../shared/types/Product";
 import { useAppSelector } from "../../shared/hooks/useAppSelector";
 
 export const ProductChoice = ({ data }: { data: Product }) => {
-  const dispatch = useAppDispatch();
   const carePrice = useAppSelector((state) => state.care.price);
   const accessoriesPrice = useAppSelector(
     (state) => state.accessories.value
   ).reduce((acc, item) => acc + item.price, 0);
-  dispatch(setColor(data.colors[0].value));
 
   return (
     <div className={styles.layout}>
@@ -89,7 +86,7 @@ export const ProductChoice = ({ data }: { data: Product }) => {
       ))}
 
       <div className={styles.button}>
-        <button>Next</button>
+        <button>add to cart</button>
       </div>
     </div>
   );

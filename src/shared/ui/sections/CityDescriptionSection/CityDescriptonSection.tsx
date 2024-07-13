@@ -1,5 +1,5 @@
 import styles from "./CityDescriptionSection.module.scss";
-import { KidsBikesPhotoSection } from "../KidsBikesPhotoSection/KidsBikesPhotoSection";
+
 export const CityDescriptionSection = () => {
   return (
     <section className={styles.section}>
@@ -31,7 +31,7 @@ export const CityDescriptionSection = () => {
           Robyn, both frames with a lower tube, making it easy to step through.
         </div>
       </div>
-      <KidsBikesPhotoSection />
+
       <div className={styles.container}>
         <img
           style={{

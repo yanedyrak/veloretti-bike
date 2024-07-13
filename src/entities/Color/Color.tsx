@@ -5,7 +5,7 @@ import { setColor } from "../../shared/store/colorSlice";
 export const Color = ({ value }: { value: string }) => {
   const colorFromState = useAppSelector((state) => state.color.value);
   const dispatch = useAppDispatch();
-
+  colorFromState === "" && dispatch(setColor(value));
   return colorFromState === value ? (
     <div
       style={{
